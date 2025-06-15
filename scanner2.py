@@ -1,4 +1,4 @@
-import requests
+iimport requests
 
 def verificar_headers(url):
     try:
@@ -30,4 +30,4 @@ if __name__ == "__main__":
     if not site.startswith("http"):
         site = "http://" + site  # adiciona protocolo se não tiver
     verificar_headers(site)
-        input("\nPressione Enter para fechar...") 
+    input("\nPressione Enter para fechar...")  # Corrigida a indentação
