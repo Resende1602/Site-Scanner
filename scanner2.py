@@ -5,7 +5,7 @@ def verificar_headers(url):
         response = requests.get(url, timeout=5)
         headers = response.headers
 
-        print(f"\n🔒 Analisando headers de segurança do site: {url}\n")
+        print(f"\n Analisando headers de segurança do site: {url}\n")
 
         # Cabeçalhos de segurança que vamos checar
         headers_seguranca = {
