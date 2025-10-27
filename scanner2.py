@@ -7,7 +7,6 @@ def verificar_headers(url):
 
         print(f"\n Analisando headers de segurança do site: {url}\n")
 
-        # Cabeçalhos de segurança que vamos checar
         headers_seguranca = {
             "Content-Security-Policy": "Protege contra ataques XSS e injeção de código.",
             "X-Frame-Options": "Previne clickjacking.",
@@ -28,6 +27,6 @@ def verificar_headers(url):
 if __name__ == "__main__":
     site = input("Digite a URL do site (ex: https://example.com): ").strip()
     if not site.startswith(("http://", "https://")):
-        site = "http://" + site  # adiciona protocolo se o usuário não forneceu
+        site = "http://" + site 
     verificar_headers(site)
     input("\nPressione Enter para encerrar...")
